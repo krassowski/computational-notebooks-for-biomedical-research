@@ -1,5 +1,5 @@
 def add(a: int, b: int):
-    """Will add a and b, which both should be integeres"""
+    """Will add a and b, which both should be integers"""
     return a + b
 
 
