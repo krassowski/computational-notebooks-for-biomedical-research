@@ -7,3 +7,4 @@ widgetsnbextension
 # imaging
 itkwidgets
 pandas
+jupyterlab-git
