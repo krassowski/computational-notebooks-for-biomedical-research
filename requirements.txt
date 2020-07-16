@@ -1,0 +1,10 @@
+jupyterlab==2.1
+jupyter-lsp
+# linters
+python-language-server[all]
+# widgets
+widgetsnbextension
+# imaging
+itkwidgets
+pandas
+rpy2

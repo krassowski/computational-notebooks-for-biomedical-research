@@ -1,0 +1,1 @@
+wget https://ftp.ncbi.nlm.nih.gov/pub/clinvar/disease_names
