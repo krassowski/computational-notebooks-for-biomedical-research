@@ -7,4 +7,3 @@ widgetsnbextension
 # imaging
 itkwidgets
 pandas
-rpy2
