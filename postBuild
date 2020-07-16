@@ -1,1 +1,3 @@
 jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyterlab/fasta-extension @krassowski/jupyterlab-lsp @jupyterlab/git itkwidgets jupyter-matplotlib jupyterlab-datawidgets
+cd data
+./download.sh
