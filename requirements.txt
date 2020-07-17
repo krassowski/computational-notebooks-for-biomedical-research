@@ -1,12 +1,12 @@
 jupyterlab==2.1
-jupyter-lsp
+jupyter-lsp=0.8.0
 # linters
 python-language-server[all]
 # widgets
-widgetsnbextension
+widgetsnbextension==3.5.1
 # imaging
-itkwidgets
+itkwidgets==0.31.3
 # molecular structures
-nglview
-pandas
-jupyterlab-git
+nglview==2.7.7
+pandas==1.0.5
+jupyterlab-git==0.20.0
