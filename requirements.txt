@@ -6,5 +6,7 @@ python-language-server[all]
 widgetsnbextension
 # imaging
 itkwidgets
+# molecular structures
+nglview
 pandas
 jupyterlab-git
