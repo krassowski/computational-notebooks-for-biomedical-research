@@ -10,3 +10,4 @@ itkwidgets==0.31.3
 nglview==2.7.7
 pandas==1.0.5
 jupyterlab-git==0.20.0
+ipycytoscape
