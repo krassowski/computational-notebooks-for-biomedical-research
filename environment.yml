@@ -1,0 +1,18 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8.3
+  - r-base=3.6.3
+  - r-ggplot2=3.3.2
+  # Python dependencies
+  - rpy2=3.3.6
+  - matplotlib=3.2.1
+  - pandas=1.0.4
+  - plotnine
+  - ipycytoscape
+  - nglview=2.7.7
+  - itkwidgets
+  - widgetsnbextension
+  - jupyter-lsp
+  - jupyter-lsp-python
+  - jupyterlab
