@@ -1,0 +1,136 @@
+---
+title: "R Notebook"
+output: html_notebook
+# runtime: shiny
+---
+
+### Equations
+
+You can use LaTeX:
+
+$${\displaystyle \mathbf {X} =\mathbf {U} \mathbf {\Sigma } \mathbf {W} ^{T}}$$
+
+where $\mathbf {\Sigma }$ is a diagonal matrix with singular values of $\mathbf {X}$
+
+
+### Plots
+
+
+```{r}
+library(ggplot2)
+df = data.frame(x=c(1, 2, 2, 3))
+ggplot(df, aes(x=x)) + geom_density(fill='#59A14F')
+```
+
+
+### Fasta
+
+```{r}
+# install.packages("msaR")
+library(msaR)
+seqfile <- system.file("sequences", "AHBA.aln", package="msaR")
+msaR(seqfile)
+
+```
+
+### Molecular structures
+
+Using [r3dmol](https://github.com/swsoyee/r3dmol). In development.
+
+```{r}
+# install.packages("r3dmol")
+library(r3dmol)
+r3dmol() %>%
+  m_add_model(data = pdb_6zsl, format = "pdb") %>%
+  m_zoom_to() %>%
+  m_set_style(style = list(cartoon = list(color = 'spectrum')))
+```
+
+
+
+### Imaging data
+
+Embedding 3D images in notebooks is possible, but does not always work.
+
+```{r, echo=FALSE}
+# sudo apt install libglu1-mesa-dev freeglut3-dev mesa-common-dev
+# install.packages("nat")
+# library(nat)
+# brain = read.nrrd('data/005_32months_T2_RegT1_Reg2Atlas_ManualBrainMask_Stripped.nrr')
+# open3d()
+# plot3d(brain)
+```
+
+
+### Networks and pathways
+
+There are multiple ways to communicate with cytoscape from R. Either static images can be embedded, or interactive plots can be served with shiny.
+
+- cyjShinyOutput
+- KEGGscape
+- RC3
+
+
+### Custom widget
+
+Custom widgets can be created using shiny:
+
+```{r echo=FALSE}
+library(shiny)
+sliderInput("m", h3("m"), min=-2, max=2, value=0, step=0.01)
+sliderInput("b", h3("b"), min=-3, max=3, value=0, step=0.5)
+
+renderPlot({
+  m = input$m
+  b = input$b
+  x = seq(-100, 100) / 10
+  df = data.frame(x=x, y=m * x + b)
+  (
+    ggplot(df, aes(x=x, y=y))
+    + geom_point()
+    + coord_fixed()
+    + ylim(-10, 10)
+  )
+})
+```
+
+### Multi-lingual - bash example
+
+Change the language identifier to use bash:
+
+```{bash}
+pwd
+```
+
+Create a file with one word *test*:
+
+```{bash}
+echo "test" > test.txt
+```
+
+md5sum is a simple command which you can run on Linux (md5 on Mac) to get a *short* reproducible string which will *very likely* change significantly if the file contents changes.
+
+```{bash}
+md5sum test.txt
+```
+
+If we change it slightly:
+
+```{bash}
+echo "test2" > test.txt
+md5sum test.txt
+```
+
+If we revert back:
+
+```{bash}
+echo "test" > test.txt
+md5sum test.txt
+```
+
+
+### Multi-lingual - Python inside R
+
+```{python, python.reticulate = FALSE}
+print("Hello word!")
+```

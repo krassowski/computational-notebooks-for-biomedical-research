@@ -8,6 +8,7 @@ widgetsnbextension==3.5.1
 itkwidgets==0.31.3
 # molecular structures
 nglview==2.7.7
-pandas==1.0.5
+pandas==1.1.4
 jupyterlab-git==0.20.0
 ipycytoscape
+plotnine==0.7.1
