@@ -1,6 +1,7 @@
 ---
 title: "R Notebook"
 output: html_notebook
+# uncomment following line to run the example with custom widgets
 # runtime: shiny
 ---
 
@@ -36,7 +37,6 @@ ggplot(df, aes(x=x)) + geom_density(fill='#59A14F')
 library(msaR)
 seqfile <- system.file("sequences", "AHBA.aln", package="msaR")
 msaR(seqfile)
-
 ```
 
 ### Molecular structures
