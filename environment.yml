@@ -3,14 +3,14 @@ channels:
 dependencies:
   - python=3.8.3
   - r-base=3.6.3
-  - r-ggplot2=3.3.2
+  - r-ggplot2
   # Python dependencies
   - rpy2=3.3.6
   - matplotlib
   - pandas
   - plotnine
   - ipycytoscape
-  - nglview=2.7.7
+  - nglview
   - itkwidgets
   - widgetsnbextension
   - jupyter-lsp
