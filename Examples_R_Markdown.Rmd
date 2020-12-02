@@ -4,6 +4,12 @@ output: html_notebook
 # runtime: shiny
 ---
 
+### Basic markdown
+
+You can *underline*, **bold**, ~~strike-through~~, add `code`, and format text in many other ways, see: [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (both Jupyter and R Markdown)
+
+For R Markdown specific features that depart from standard Markdown see [R Markdown Cheatsheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf).
+
 ### Equations
 
 You can use LaTeX:
@@ -93,6 +99,26 @@ renderPlot({
   )
 })
 ```
+
+### Explaining code details
+
+Whether you want to get help, or explain how a specific fragment of code works without repeating yourself, you can do that with built-in question mark operator.
+
+In this example let's see what are the arguments of `sd` function, and how it is implemented.
+
+To get help on a function usage prepend `?`(note: append is not supported in R markdown notebooks)
+
+```{r}
+?sd
+```
+
+To search for other implementations use `??`
+
+```{r}
+??sd
+```
+
+Differently to Jupyter, the content is displayed but not stored.
 
 ### Multi-lingual - bash example
 
