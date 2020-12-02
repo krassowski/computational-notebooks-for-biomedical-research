@@ -4,6 +4,8 @@ dependencies:
   - python=3.8.3
   - r-base=3.6.3
   - r-ggplot2
+  - r-shiny
+  - r-msar
   # Python dependencies
   - rpy2=3.3.6
   - matplotlib
