@@ -6,8 +6,8 @@ dependencies:
   - r-ggplot2=3.3.2
   # Python dependencies
   - rpy2=3.3.6
-  - matplotlib=3.2.1
-  - pandas=1.0.4
+  - matplotlib
+  - pandas
   - plotnine
   - ipycytoscape
   - nglview=2.7.7
