@@ -12,9 +12,13 @@ dependencies:
   - pandas
   - plotnine
   - ipycytoscape
-  - nglview
   - itkwidgets
   - widgetsnbextension
   - jupyter-lsp
   - jupyter-lsp-python
   - jupyterlab
+  - jupyterlab-git
+  - jupyterlab-lsp
+  - jupyterlab-fasta
+  - nglview
+  - ipympl
