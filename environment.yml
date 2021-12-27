@@ -13,7 +13,7 @@ dependencies:
   - plotnine
   - ipycytoscape
   - itkwidgets
-  - widgetsnbextension
+  - ipywidgets
   - jupyter-lsp
   - jupyter-lsp-python
   - jupyterlab
